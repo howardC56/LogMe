@@ -1,30 +1,22 @@
-//
-//  LogInViewController.swift
-//  LogMe
-//
-//  Created by Howard Chang on 9/24/19.
-//  Copyright © 2019 Howard Chang. All rights reserved.
-//
-
 import UIKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var EmailTextField: UITextField!
+    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var SignInButton: UIButton!
+    @IBOutlet weak var ErrorLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ErrorLabel.alpha = 0
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func SignInPressed(_ sender: UIButton) {
     }
-    */
+    
+    
 
 }

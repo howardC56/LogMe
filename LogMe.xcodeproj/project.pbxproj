@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BA7886DB79FBB1BF3BBD522 /* Pods_LogMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5D542562E38D2B38451CA1 /* Pods_LogMe.framework */; };
+		880390E4233D42A7005D4B10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 880390E3233D42A7005D4B10 /* GoogleService-Info.plist */; };
 		8851E33D233B078F0083D15F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851E33C233B078F0083D15F /* AppDelegate.swift */; };
 		8851E33F233B078F0083D15F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851E33E233B078F0083D15F /* SceneDelegate.swift */; };
 		8851E341233B078F0083D15F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851E340233B078F0083D15F /* ViewController.swift */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		724D6625C87A259A8CDC922F /* Pods-LogMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogMe.debug.xcconfig"; path = "Target Support Files/Pods-LogMe/Pods-LogMe.debug.xcconfig"; sourceTree = "<group>"; };
+		880390E2233D1FBF005D4B10 /* LogMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LogMe.entitlements; sourceTree = "<group>"; };
+		880390E3233D42A7005D4B10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8851E339233B078F0083D15F /* LogMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8851E33C233B078F0083D15F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8851E33E233B078F0083D15F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,8 @@
 		8851E353233B07B30083D15F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8851E355233B07C50083D15F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8851E357233B07D60083D15F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BF5D542562E38D2B38451CA1 /* Pods_LogMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0C1DFBBFB79226FFFD6AB7 /* Pods-LogMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogMe.release.xcconfig"; path = "Target Support Files/Pods-LogMe/Pods-LogMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA7886DB79FBB1BF3BBD522 /* Pods_LogMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +58,8 @@
 			children = (
 				8851E33B233B078F0083D15F /* LogMe */,
 				8851E33A233B078F0083D15F /* Products */,
+				D14EC90CD23A0119571C1694 /* Pods */,
+				A88B969B7412302086DB61D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +74,14 @@
 		8851E33B233B078F0083D15F /* LogMe */ = {
 			isa = PBXGroup;
 			children = (
+				880390E2233D1FBF005D4B10 /* LogMe.entitlements */,
 				8851E33C233B078F0083D15F /* AppDelegate.swift */,
 				8851E33E233B078F0083D15F /* SceneDelegate.swift */,
 				8851E359233B07E20083D15F /* View */,
 				8851E342233B078F0083D15F /* Main.storyboard */,
 				8851E348233B07900083D15F /* Assets.xcassets */,
 				8851E34A233B07900083D15F /* LaunchScreen.storyboard */,
+				880390E3233D42A7005D4B10 /* GoogleService-Info.plist */,
 				8851E34D233B07900083D15F /* Info.plist */,
 				8851E345233B078F0083D15F /* LogMe.xcdatamodeld */,
 			);
@@ -87,6 +99,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A88B969B7412302086DB61D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D542562E38D2B38451CA1 /* Pods_LogMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14EC90CD23A0119571C1694 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				724D6625C87A259A8CDC922F /* Pods-LogMe.debug.xcconfig */,
+				EB0C1DFBBFB79226FFFD6AB7 /* Pods-LogMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8851E350233B07900083D15F /* Build configuration list for PBXNativeTarget "LogMe" */;
 			buildPhases = (
+				CBC0E958CD4243336C06DCDD /* [CP] Check Pods Manifest.lock */,
 				8851E335233B078F0083D15F /* Sources */,
 				8851E336233B078F0083D15F /* Frameworks */,
 				8851E337233B078F0083D15F /* Resources */,
+				B26A35AFFD1AACC2A4C5C475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,12 +177,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8851E34C233B07900083D15F /* LaunchScreen.storyboard in Resources */,
+				880390E4233D42A7005D4B10 /* GoogleService-Info.plist in Resources */,
 				8851E349233B07900083D15F /* Assets.xcassets in Resources */,
 				8851E344233B078F0083D15F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B26A35AFFD1AACC2A4C5C475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogMe/Pods-LogMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LogMe/Pods-LogMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LogMe/Pods-LogMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC0E958CD4243336C06DCDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8851E335233B078F0083D15F /* Sources */ = {
@@ -306,8 +380,10 @@
 		};
 		8851E351233B07900083D15F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724D6625C87A259A8CDC922F /* Pods-LogMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogMe/LogMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LogMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,8 +399,10 @@
 		};
 		8851E352233B07900083D15F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0C1DFBBFB79226FFFD6AB7 /* Pods-LogMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LogMe/LogMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LogMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
